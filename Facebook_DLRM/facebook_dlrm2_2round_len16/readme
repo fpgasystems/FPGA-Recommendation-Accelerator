@@ -1,0 +1,17 @@
+Facebook has 3 types Deep Learning Recommendation Models (DLRM). Type 2 (DLRM2) is the most embedding intensive one. 
+
+However, they did not provide all necessary concrete numbers.
+
+What we knew: 
+1. 8 ~ 12 embedding tables
+2. each table lookup 4 times
+
+What we did not know:
+1. entry number of each table, e.g., 1K or 1M (they only said the tables are small); 
+2. vector size of each entry, e.g., 4 or 32
+
+Thus, we can only make some assumption:
+1. they said tables are small, thus we assume they can fit in a single HBM bank (256MB) -> 32-D vectors, 1M entries.
+2. each table lookup 4 rounds, we will increase the concurrency by replicate the tables to several banks. For example, 8 tables -> 32 tables, each bank contain a table.
+3. 8 ~ 12 table x 4 lookups = 32 ~ 48 lookups, thus it takes 1 ~ 2 rounds HBM access to each bank. Experiments of 1 and 2 rounds will be done separately.
+4. use same data width of 32-bit numbers

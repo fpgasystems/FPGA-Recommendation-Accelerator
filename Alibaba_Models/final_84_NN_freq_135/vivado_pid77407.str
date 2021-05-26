@@ -1,0 +1,1694 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:39:14 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 77407
+License: Customer
+
+Current time: 	Mon Jun 15 12:53:45 CEST 2020
+Time zone: 	Central European Standard Time (Europe/Zurich)
+
+OS: Ubuntu
+OS Version: 4.14.156-U
+OS Architecture: amd64
+Available processors (cores): 80
+
+Display: localhost:13.0
+Screen size: 1440x878
+Screen resolution (DPI): 100
+Available screens: 1
+Available disk space: 23 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/Xilinx/Vivado/2019.2/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	wejiang
+User home directory: /home/wejiang
+User working directory: /mnt/scratch/wenqi/embedding_inference/final_84_NN_freq_135
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/Xilinx/Vivado
+HDI_APPROOT: /opt/Xilinx/Vivado/2019.2
+RDI_DATADIR: /opt/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: /opt/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: /home/wejiang/.Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: /home/wejiang/.Xilinx/Vivado/2019.2/
+Vivado layouts directory: /home/wejiang/.Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	/opt/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	/mnt/scratch/wenqi/embedding_inference/final_84_NN_freq_135/vivado.log
+Vivado journal file location: 	/mnt/scratch/wenqi/embedding_inference/final_84_NN_freq_135/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-77407-alveo0
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: /opt/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/Xilinx/Vivado/2019.2
+XILINX_SDK: /opt/Xilinx/Vitis/2019.2
+XILINX_VITIS: /opt/Xilinx/Vitis/2019.2
+XILINX_VIVADO: /opt/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: /opt/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	199 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,180 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 72 MB (+73037kb) [00:00:13]
+// [Engine Memory]: 1,172 MB (+1077344kb) [00:00:13]
+// Opening Vivado Project: _x.hw/vadd/link/vivado/vpl/prj/prj.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  3380 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,190 MB. GUI used memory: 58 MB. Current time: 6/15/20, 12:53:45 PM CEST
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project _x.hw/vadd/link/vivado/vpl/prj/prj.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PR_PARTITION_RM_NEW
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,427 MB. GUI used memory: 44 MB. Current time: 6/15/20, 12:54:05 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,502 MB. GUI used memory: 44 MB. Current time: 6/15/20, 12:54:24 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,627 MB. GUI used memory: 44 MB. Current time: 6/15/20, 12:54:44 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 85 MB (+9904kb) [00:01:41]
+// [Engine Memory]: 1,772 MB (+568255kb) [00:01:41]
+// [GUI Memory]: 96 MB (+7047kb) [00:01:41]
+// [GUI Memory]: 254 MB (+160560kb) [00:01:46]
+// [Engine Memory]: 2,629 MB (+805385kb) [00:01:46]
+// [GUI Memory]: 267 MB (+286kb) [00:01:46]
+// [Engine Memory]: 2,798 MB (+38700kb) [00:01:47]
+// WARNING: HEventQueue.dispatchEvent() is taking  7548 ms.
+// Tcl Message: open_project _x.hw/vadd/link/vivado/vpl/prj/prj.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/mnt/scratch/wenqi/embedding_inference/84_NN_freq_135/_x.hw/vadd/link/vivado/vpl/prj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,471 MB. GUI used memory: 186 MB. Current time: 6/15/20, 12:55:16 PM CEST
+// [Engine Memory]: 2,939 MB (+1383kb) [00:01:49]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2195 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4667 ms.
+// [Engine Memory]: 5,225 MB (+2243302kb) [00:01:56]
+// Project name: prj; location: /mnt/scratch/wenqi/embedding_inference/final_84_NN_freq_135/_x.hw/vadd/link/vivado/vpl/prj; part: xcu280-fsvh2892-2L-e
+// [GUI Memory]: 283 MB (+2946kb) [00:02:00]
+// Tcl Message: open_project: Time (s): cpu = 00:02:25 ; elapsed = 00:01:43 . Memory (MB): peak = 7784.559 ; gain = 1058.848 ; free physical = 67071 ; free virtual = 457002 
+dismissDialog("Open Project"); // bB (cr)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 931ms to process. Increasing delay to 3000 ms.
+// bB (cr):  Update Design Hierarchy : addNotify
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Update Design Hierarchy"); // bB (cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.007549516391009092 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Sun May 24 23:09:17 CEST 2020 ; 05:52:19 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.4s
+// [GUI Memory]: 314 MB (+17801kb) [00:02:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  1331 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1115 ms. Increasing delay to 3345 ms.
+// [GUI Memory]: 335 MB (+4988kb) [00:02:08]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1121ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,895 MB. GUI used memory: 228 MB. Current time: 6/15/20, 12:55:38 PM CEST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 428ms to process. Increasing delay to 2000 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.007549516391009092 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Sun May 24 23:09:17 CEST 2020 ; 05:52:19 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.007549516391009092 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Sun May 24 23:09:17 CEST 2020 ; 05:52:19 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false); // az (O, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.007549516391009092 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Sun May 24 23:09:17 CEST 2020 ; 05:52:19 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+// bB (cr):  Update Design Hierarchy : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2281 ms.
+// a (cr): Critical Messages: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1855 ms.
+dismissDialog("Update Design Hierarchy"); // bB (cr)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.007549516391009092 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Sun May 24 23:09:17 CEST 2020 ; 05:52:19 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false); // az (O, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.007549516391009092 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Sun May 24 23:09:17 CEST 2020 ; 05:52:19 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+// bB (cr):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1135 ms.
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 5,309 MB. GUI used memory: 237 MB. Current time: 6/15/20, 12:57:35 PM CEST
+// [Engine Memory]: 5,587 MB (+105234kb) [00:04:21]
+// HMemoryUtils.trashcanNow. Engine heap size: 5,667 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:57:55 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 5,947 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:58:10 PM CEST
+// [Engine Memory]: 5,971 MB (+110002kb) [00:04:42]
+// [Engine Memory]: 6,304 MB (+35956kb) [00:04:58]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,368 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:58:30 PM CEST
+// [Engine Memory]: 6,648 MB (+30284kb) [00:05:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 6,659 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:58:45 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 6,865 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:59:00 PM CEST
+// [Engine Memory]: 7,012 MB (+33493kb) [00:05:46]
+// HMemoryUtils.trashcanNow. Engine heap size: 7,064 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:59:20 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,345 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:59:35 PM CEST
+// [Engine Memory]: 7,540 MB (+185259kb) [00:06:08]
+// [Engine Memory]: 8,941 MB (+1074116kb) [00:06:24]
+// HMemoryUtils.trashcanNow. Engine heap size: 8,941 MB. GUI used memory: 233 MB. Current time: 6/15/20, 12:59:55 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 9,187 MB. GUI used memory: 233 MB. Current time: 6/15/20, 1:00:10 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 9,469 MB. GUI used memory: 234 MB. Current time: 6/15/20, 1:00:35 PM CEST
+// [Engine Memory]: 9,469 MB (+84304kb) [00:07:06]
+// [Engine Memory]: 10,307 MB (+382903kb) [00:07:18]
+// HMemoryUtils.trashcanNow. Engine heap size: 10,557 MB. GUI used memory: 233 MB. Current time: 6/15/20, 1:00:55 PM CEST
+// [Engine Memory]: 12,456 MB (+1712554kb) [00:07:33]
+// HMemoryUtils.trashcanNow. Engine heap size: 12,634 MB. GUI used memory: 233 MB. Current time: 6/15/20, 1:01:10 PM CEST
+// TclEventType: PHY_BLOCK_NEW
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: PHY_BLOCK_ADD_INST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PHY_BLOCK_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 12,896 MB. GUI used memory: 235 MB. Current time: 6/15/20, 1:02:10 PM CEST
+// [Engine Memory]: 13,121 MB (+44445kb) [00:08:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 13,521 MB. GUI used memory: 233 MB. Current time: 6/15/20, 1:02:30 PM CEST
+// [Engine Memory]: 13,837 MB (+62854kb) [00:09:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 14,062 MB. GUI used memory: 233 MB. Current time: 6/15/20, 1:02:50 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 14,267 MB. GUI used memory: 233 MB. Current time: 6/15/20, 1:03:05 PM CEST
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 14,276 MB. GUI used memory: 267 MB. Current time: 6/15/20, 1:03:46 PM CEST
+// [GUI Memory]: 353 MB (+1387kb) [00:10:22]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /opt/Xilinx/Vivado/2019.2/data/parts/xilinx/virtexuplusHBM/devint/virtexuplusHBM/xcu280/xcu280.xgd; ZipEntry: xcu280_detail.xgd elapsed time: 1.8s
+// [GUI Memory]: 376 MB (+5433kb) [00:10:23]
+// [GUI Memory]: 406 MB (+11536kb) [00:10:25]
+// [GUI Memory]: 426 MB (+215kb) [00:10:25]
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+// [GUI Memory]: 464 MB (+17336kb) [00:10:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  6392 ms.
+// Tcl Message: INFO: [Device 21-403] Loading part xcu280-fsvh2892-2L-e 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 11998.332 ; gain = 135.703 ; free physical = 63787 ; free virtual = 453722 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 49062 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 8 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-4422] SNAPPING_MODE is set so implementation will use the DERIVED_RANGES which may be different then the GRID_RANGES. INFO: [Constraints 18-4421] A LAGUNA range, without usable sites, was added to DERIVED_RANGES for purposes of keeping the Programmable Unit together within the reconfigurable pblock. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:01:04 ; elapsed = 00:01:00 . Memory (MB): peak = 19177.539 ; gain = 1632.586 ; free physical = 57122 ; free virtual = 447056 
+// Tcl Message: Restored from archive | CPU: 66.970000 secs | Memory: 1433.663261 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:01:05 ; elapsed = 00:01:01 . Memory (MB): peak = 19177.539 ; gain = 1632.586 ; free physical = 57123 ; free virtual = 447058 
+// Tcl Message: Generating merged BMM file for the design top 'pfm_dynamic_memory_subsystem_0'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /mnt/scratch/wenqi/embedding_inference/final_84_NN_freq_135/_x.hw/vadd/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_11/sw/calibration_0/Debug/calibration_ddr.elf /mnt/scratch/wenqi/embedding_inference/final_84_NN_freq_135/_x.hw/vadd/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_14/sw/calibration_0/Debug/calibration_ddr.elf  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.19 . Memory (MB): peak = 19185.543 ; gain = 0.000 ; free physical = 57305 ; free virtual = 447240 
+// WARNING: HEventQueue.dispatchEvent() is taking  2170 ms.
+// [GUI Memory]: 489 MB (+1559kb) [00:10:31]
+// Tcl Message: open_run: Time (s): cpu = 00:07:29 ; elapsed = 00:08:01 . Memory (MB): peak = 19213.555 ; gain = 9765.191 ; free physical = 56679 ; free virtual = 446613 
+// ExpRunCommands.openImplResults elapsed time: 485.6s
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  2034 ms.
+// [Engine Memory]: 14,818 MB (+302736kb) [00:10:34]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2118 ms. Increasing delay to 6354 ms.
+// [GUI Memory]: 515 MB (+2044kb) [00:10:39]
+// [GUI Memory]: 550 MB (+9221kb) [00:10:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  6428 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 15,478 MB. GUI used memory: 453 MB. Current time: 6/15/20, 1:04:10 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2169 ms.
+// [Engine Memory]: 15,748 MB (+198360kb) [00:10:45]
+// Elapsed time: 498 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  2281 ms.
+// RouteApi::initDelayMediator elapsed time: 25.7s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// WARNING: HEventQueue.dispatchEvent() is taking  1627 ms.
+// Elapsed time: 15 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION, "Report Utilization..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cr): Report Utilization: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1850 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// HMemoryUtils.trashcanNow. Engine heap size: 16,017 MB. GUI used memory: 452 MB. Current time: 6/15/20, 1:04:40 PM CEST
+// 'cr' command handler elapsed time: 5 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1017 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2104 ms.
+dismissDialog("Report Utilization"); // a (cr)
+// Tcl Message: report_utilization -name utilization_1 
+// bB (cr):  Report Utilization : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1481 ms.
+// [Engine Memory]: 16,618 MB (+86658kb) [00:11:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 17,117 MB. GUI used memory: 453 MB. Current time: 6/15/20, 1:05:10 PM CEST
+// [Engine Memory]: 19,718 MB (+2379138kb) [00:11:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 19,327 MB. GUI used memory: 452 MB. Current time: 6/15/20, 1:05:25 PM CEST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 100.3s
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// Device view-level: 0.1
+// WARNING: HEventQueue.dispatchEvent() is taking  1468 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 20,125 MB. GUI used memory: 454 MB. Current time: 6/15/20, 1:06:25 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 20,659 MB. GUI used memory: 452 MB. Current time: 6/15/20, 1:06:45 PM CEST
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [GUI Memory]: 578 MB (+856kb) [00:13:54]
+// [GUI Memory]: 608 MB (+745kb) [00:13:55]
+// [GUI Memory]: 638 MB (+386kb) [00:13:56]
+// [Engine Memory]: 21,396 MB (+726722kb) [00:13:56]
+// [GUI Memory]: 671 MB (+933kb) [00:13:58]
+// [GUI Memory]: 705 MB (+346kb) [00:13:59]
+// [GUI Memory]: 741 MB (+777kb) [00:14:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 21,325 MB. GUI used memory: 581 MB. Current time: 6/15/20, 1:07:31 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1434 ms.
+// [GUI Memory]: 779 MB (+909kb) [00:14:07]
+// [GUI Memory]: 819 MB (+319kb) [00:14:09]
+// [GUI Memory]: 860 MB (+729kb) [00:14:10]
+// [Engine Memory]: 22,469 MB (+2841kb) [00:14:12]
+// [GUI Memory]: 904 MB (+787kb) [00:14:12]
+// [GUI Memory]: 950 MB (+485kb) [00:14:14]
+// HMemoryUtils.trashcanNow. Engine heap size: 21,717 MB. GUI used memory: 694 MB. Current time: 6/15/20, 1:07:46 PM CEST
+// [GUI Memory]: 998 MB (+844kb) [00:14:46]
+// [GUI Memory]: 1,049 MB (+1141kb) [00:14:47]
+// [GUI Memory]: 1,102 MB (+143kb) [00:14:47]
+// [GUI Memory]: 1,157 MB (+744kb) [00:14:48]
+// [GUI Memory]: 1,216 MB (+921kb) [00:14:49]
+// [GUI Memory]: 1,282 MB (+5053kb) [00:14:51]
+// HMemoryUtils.trashcanNow. Engine heap size: 22,311 MB. GUI used memory: 865 MB. Current time: 6/15/20, 1:08:29 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2866 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1711 ms.
+// Tcl Message: report_utilization: Time (s): cpu = 00:18:55 ; elapsed = 00:03:51 . Memory (MB): peak = 25020.316 ; gain = 4641.922 ; free physical = 49186 ; free virtual = 439121 
+// WARNING: HEventQueue.dispatchEvent() is taking  1010 ms.
+// Elapsed time: 235 seconds
+dismissDialog("Report Utilization"); // bB (cr)
+// Elapsed time: 131 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (O, cr)
+maximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // aA (aL, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1596 ms.
+// Elapsed time: 287 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // af (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1657 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1790 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1795 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3694 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2673 ms.
+// Elapsed time: 55 seconds
+setFileChooser("/mnt/scratch/wenqi/embedding_inference/final_42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj/prj.xpr");
+// WARNING: HEventQueue.dispatchEvent() is taking  2208 ms.
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 20,664 MB. GUI used memory: 390 MB. Current time: 6/15/20, 1:16:50 PM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 20,657 MB. GUI used memory: 433 MB. Current time: 6/15/20, 1:16:55 PM CEST
+// TclEventType: DESIGN_CLOSE
+// Opening Vivado Project: /mnt/scratch/wenqi/embedding_inference/final_42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj/prj.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  31702 ms.
+// Elapsed time: 35 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// WARNING: HEventQueue.dispatchEvent() is taking  2246 ms.
+// Tcl Message: close_project 
+// WARNING: HEventQueue.dispatchEvent() is taking  2410 ms.
+// Tcl Message: close_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:30 . Memory (MB): peak = 25022.449 ; gain = 0.000 ; free physical = 61803 ; free virtual = 451738 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PR_PARTITION_RM_NEW
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  5724 ms.
+// Tcl Message: open_project /mnt/scratch/wenqi/embedding_inference/final_42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj/prj.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/mnt/scratch/wenqi/embedding_inference/42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2219 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4543 ms.
+// Project name: prj; location: /mnt/scratch/wenqi/embedding_inference/final_42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj; part: xcu280-fsvh2892-2L-e
+// 'i' command handler elapsed time: 208 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:01:45 ; elapsed = 00:01:51 . Memory (MB): peak = 25022.449 ; gain = 0.000 ; free physical = 60614 ; free virtual = 450549 
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1269ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1269 ms.
+// Elapsed time: 116 seconds
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// bB (cr):  Update Design Hierarchy : addNotify
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2529 ms. Increasing delay to 7587 ms.
+dismissDialog("Update Design Hierarchy"); // bB (cr)
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1291ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1291 ms.
+// a (cr): Critical Messages: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2558 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.012049916200339794 ; 0.0 ; 0.002450040075927973 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Mon May 25 18:52:26 CEST 2020 ; 07:07:58 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1336 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.012049916200339794 ; 0.0 ; 0.002450040075927973 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Mon May 25 18:52:26 CEST 2020 ; 07:07:58 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+// bB (cr):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2251 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2171 ms.
+// Tcl Message: open_run impl_1 
+// TclEventType: PHY_BLOCK_NEW
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: PHY_BLOCK_ADD_INST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PHY_BLOCK_MODIFY
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 20,317 MB. GUI used memory: 288 MB. Current time: 6/15/20, 1:26:54 PM CEST
+// Xgd.load filename: /opt/Xilinx/Vivado/2019.2/data/parts/xilinx/virtexuplusHBM/devint/virtexuplusHBM/xcu280/xcu280.xgd; ZipEntry: xcu280_detail.xgd elapsed time: 1.7s
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  6007 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 26589.074 ; gain = 0.000 ; free physical = 57630 ; free virtual = 447565 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 50157 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 20 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-4422] SNAPPING_MODE is set so implementation will use the DERIVED_RANGES which may be different then the GRID_RANGES. INFO: [Constraints 18-4421] A LAGUNA range, without usable sites, was added to DERIVED_RANGES for purposes of keeping the Programmable Unit together within the reconfigurable pblock. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:01:11 ; elapsed = 00:01:08 . Memory (MB): peak = 26589.074 ; gain = 0.000 ; free physical = 50291 ; free virtual = 440226 
+// Tcl Message: Restored from archive | CPU: 74.060000 secs | Memory: 1583.244759 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:01:12 ; elapsed = 00:01:09 . Memory (MB): peak = 26589.074 ; gain = 0.000 ; free physical = 50292 ; free virtual = 440227 
+// Tcl Message: Generating merged BMM file for the design top 'pfm_dynamic_memory_subsystem_0'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /mnt/scratch/wenqi/embedding_inference/final_42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_11/sw/calibration_0/Debug/calibration_ddr.elf /mnt/scratch/wenqi/embedding_inference/final_42_NN_freq_140/_x.hw/vadd/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_14/sw/calibration_0/Debug/calibration_ddr.elf  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.21 . Memory (MB): peak = 26589.074 ; gain = 0.000 ; free physical = 50512 ; free virtual = 440450 
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  2759 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:07:20 ; elapsed = 00:07:33 . Memory (MB): peak = 26589.074 ; gain = 0.000 ; free physical = 51287 ; free virtual = 441225 
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  1469 ms.
+// ExpRunCommands.openImplResults elapsed time: 461.4s
+// TclEventType: TIMING_SUMMARY_UPDATED
+// RouteApi::initDelayMediator elapsed time: 6.1s
+// WARNING: HEventQueue.dispatchEvent() is taking  4581 ms.
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 470 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 22,989 MB. GUI used memory: 475 MB. Current time: 6/15/20, 1:28:51 PM CEST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 122.1s
+// Device view-level: 0.1
+// WARNING: HEventQueue.dispatchEvent() is taking  1277 ms.
+// Elapsed time: 602 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1651 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION, "Report Utilization..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cr): Report Utilization: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1777 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// 'cr' command handler elapsed time: 4 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1084 ms.
+dismissDialog("Report Utilization"); // a (cr)
+// bB (cr):  Report Utilization : addNotify
+// Tcl Message: report_utilization -name utilization_1 
+// WARNING: HEventQueue.dispatchEvent() is taking  2123 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 23,136 MB. GUI used memory: 470 MB. Current time: 6/15/20, 1:39:01 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 23,662 MB. GUI used memory: 469 MB. Current time: 6/15/20, 1:39:16 PM CEST
+// [Engine Memory]: 23,716 MB (+129048kb) [00:45:48]
+// HMemoryUtils.trashcanNow. Engine heap size: 24,007 MB. GUI used memory: 470 MB. Current time: 6/15/20, 1:39:36 PM CEST
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// WARNING: HEventQueue.dispatchEvent() is taking  1264 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 24,882 MB. GUI used memory: 560 MB. Current time: 6/15/20, 1:40:06 PM CEST
+// [Engine Memory]: 25,408 MB (+531375kb) [00:46:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 25,444 MB. GUI used memory: 704 MB. Current time: 6/15/20, 1:40:22 PM CEST
+// [GUI Memory]: 1,352 MB (+6663kb) [00:47:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 26,063 MB. GUI used memory: 883 MB. Current time: 6/15/20, 1:41:10 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2943 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1875 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2379 ms.
+// Tcl Message: report_utilization: Time (s): cpu = 00:15:37 ; elapsed = 00:03:40 . Memory (MB): peak = 28701.375 ; gain = 958.914 ; free physical = 45176 ; free virtual = 435114 
+// WARNING: HEventQueue.dispatchEvent() is taking  2556 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1110 ms.
+// Elapsed time: 227 seconds
+dismissDialog("Report Utilization"); // bB (cr)
+// Elapsed time: 487 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (O, cr)
+maximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // aA (aL, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1733 ms.
+// Elapsed time: 24 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  1840 ms.
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  2037 ms.
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// WARNING: HEventQueue.dispatchEvent() is taking  1889 ms.
+// Elapsed time: 34 seconds
+setFileChooser("/mnt/scratch/wenqi/embedding_inference/final_42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj/prj.xpr");
+// WARNING: HEventQueue.dispatchEvent() is taking  2019 ms.
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 24,377 MB. GUI used memory: 397 MB. Current time: 6/15/20, 1:50:42 PM CEST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 24,377 MB. GUI used memory: 440 MB. Current time: 6/15/20, 1:50:48 PM CEST
+// TclEventType: DESIGN_CLOSE
+// Opening Vivado Project: /mnt/scratch/wenqi/embedding_inference/final_42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj/prj.xpr. Version: Vivado v2019.2 
+// bB (cr):  Open Project : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  36131 ms.
+// Elapsed time: 39 seconds
+selectButton("OptionPane.button", "Yes"); // JButton (A, G)
+// Tcl Message: close_project 
+// WARNING: HEventQueue.dispatchEvent() is taking  2123 ms.
+// Tcl Message: close_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 28701.508 ; gain = 0.000 ; free physical = 58788 ; free virtual = 448726 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PR_PARTITION_RM_NEW
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  6339 ms.
+// Tcl Message: open_project /mnt/scratch/wenqi/embedding_inference/final_42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj/prj.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/mnt/scratch/wenqi/embedding_inference/42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2342 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4112 ms.
+// Project name: prj; location: /mnt/scratch/wenqi/embedding_inference/final_42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj; part: xcu280-fsvh2892-2L-e
+// 'i' command handler elapsed time: 189 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:01:34 ; elapsed = 00:01:52 . Memory (MB): peak = 28701.508 ; gain = 0.000 ; free physical = 57726 ; free virtual = 447665 
+// Elapsed time: 115 seconds
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1195ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1195 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2361 ms. Increasing delay to 7083 ms.
+// bB (cr):  Update Design Hierarchy : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2092 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1045ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1045 ms.
+// a (cr): Critical Messages: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2023 ms.
+dismissDialog("Update Design Hierarchy"); // bB (cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.003203659551218152 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Tue May 26 12:28:19 CEST 2020 ; 04:52:52 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false); // az (O, cr)
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  2052 ms.
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.003203659551218152 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Tue May 26 12:28:19 CEST 2020 ; 04:52:52 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+// bB (cr):  Update Design Hierarchy : addNotify
+dismissDialog("Update Design Hierarchy"); // bB (cr)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.003203659551218152 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Tue May 26 12:28:19 CEST 2020 ; 04:52:52 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false); // az (O, cr)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_1 ; config_1 ; constrs_1 ; write_bitstream Complete! ;  ; 0.003203659551218152 ; 0.0 ; 0.0036002311389893293 ; 0.0 ; 0.0 ;  ;  ;  ;  ;  ;  ;  ; Tue May 26 12:28:19 CEST 2020 ; 04:52:52 ; Vivado Implementation Defaults* (Vivado Implementation 2019) ; Vivado Implementation Default Reports (Vivado Implementation 2019) ; xcu280-fsvh2892-2L-e ;  ; Default settings for Implementation.", 0, "impl_1", 0, false, false, false, false, false, true); // az (O, cr) - Double Click
+// bB (cr):  Open Implemented Design : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1176 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2313 ms.
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 24,395 MB. GUI used memory: 350 MB. Current time: 6/15/20, 1:58:08 PM CEST
+// TclEventType: PHY_BLOCK_NEW
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: SIGNAL_INTERFACE_ADD
+// TclEventType: SIGNAL_HIERARCHY_CHANGED
+// TclEventType: PHY_BLOCK_ADD_INST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: PHY_BLOCK_MODIFY
+// WARNING: HEventQueue.dispatchEvent() is taking  1448 ms.
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 24,331 MB. GUI used memory: 315 MB. Current time: 6/15/20, 2:01:27 PM CEST
+// Xgd.load filename: /opt/Xilinx/Vivado/2019.2/data/parts/xilinx/virtexuplusHBM/devint/virtexuplusHBM/xcu280/xcu280.xgd; ZipEntry: xcu280_detail.xgd elapsed time: 1.7s
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: updateGUI() is taking  1221 ms.
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.3s
+// WARNING: HEventQueue.dispatchEvent() is taking  13245 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 30275.355 ; gain = 0.000 ; free physical = 54943 ; free virtual = 444881 
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 42310 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 36 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.2 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-4422] SNAPPING_MODE is set so implementation will use the DERIVED_RANGES which may be different then the GRID_RANGES. INFO: [Constraints 18-4421] A LAGUNA range, without usable sites, was added to DERIVED_RANGES for purposes of keeping the Programmable Unit together within the reconfigurable pblock. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:01:16 ; elapsed = 00:01:10 . Memory (MB): peak = 30275.355 ; gain = 0.000 ; free physical = 47492 ; free virtual = 437430 
+// Tcl Message: Restored from archive | CPU: 78.890000 secs | Memory: 1574.714706 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:01:17 ; elapsed = 00:01:11 . Memory (MB): peak = 30275.355 ; gain = 0.000 ; free physical = 47492 ; free virtual = 437430 
+// Tcl Message: Generating merged BMM file for the design top 'pfm_dynamic_memory_subsystem_0'... 
+// Tcl Message: INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: /mnt/scratch/wenqi/embedding_inference/final_42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_11/sw/calibration_0/Debug/calibration_ddr.elf /mnt/scratch/wenqi/embedding_inference/final_42_short_NN_freq_120/_x.hw/vadd/link/vivado/vpl/prj/prj.srcs/my_rm/bd/bd/ip/pfm_dynamic_memory_subsystem_0/bd_0/ip/ip_14/sw/calibration_0/Debug/calibration_ddr.elf  
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.24 . Memory (MB): peak = 30275.355 ; gain = 0.000 ; free physical = 47750 ; free virtual = 437688 
+// WARNING: HEventQueue.dispatchEvent() is taking  1126 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1777 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1260 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1301 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1553 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:07:47 ; elapsed = 00:08:14 . Memory (MB): peak = 30275.355 ; gain = 0.000 ; free physical = 47172 ; free virtual = 437110 
+// RouteApi::initDelayMediator elapsed time: 5.8s
+// WARNING: HEventQueue.dispatchEvent() is taking  5012 ms.
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  1997 ms.
+// ExpRunCommands.openImplResults elapsed time: 512.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: TIMING_SUMMARY_UPDATED
+// WARNING: HEventQueue.dispatchEvent() is taking  7493 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1876 ms.
+// Elapsed time: 526 seconds
+dismissDialog("Open Implemented Design"); // bB (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 26,406 MB. GUI used memory: 534 MB. Current time: 6/15/20, 2:03:28 PM CEST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 126.4s
+// PAPropertyPanels.initPanels (impl_1) elapsed time: 0.2s
+// Device view-level: 0.1
+// WARNING: HEventQueue.dispatchEvent() is taking  1338 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2234 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11190 ms.
+// Thread: Process Messages Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.eVM(SourceFile:486)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: Thread-1
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1058)
+// 	at ui.PlanAhead.jswMain(SourceFile:1101)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Attach Listener
+// Thread: AWT-EventQueue-1
+// 	at java.desktop@9.0.4/sun.awt.X11.XlibWrapper.XQueryPointer(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.X11.XGlobalCursorManager.getCursorPos(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.GlobalCursorManager._updateCursor(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.GlobalCursorManager.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XComponentPeer.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.updateCursorImmediately(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.validate(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager.validateInvalidComponents(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.RepaintManager$ProcessingRunnable.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.y.construct(SourceFile:2503)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: AWT-XAWT
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.park(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireQueued(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer.acquire(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.ReentrantLock.lock(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.SunToolkit.awtLock(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.waitForEvents(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.X11.XToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.construct(SourceFile:317)
+// 	at ui.frmwork.A.run(SourceFile:199)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// WARNING: HEventQueue.dispatchEvent() is taking  4145 ms.
+// Elapsed time: 1470 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_IO, "IO"); // af (cr)
+selectMenu(PAResourceItoN.MainMenuMgr_TIMING, "Timing"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION, "Report Utilization..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_REPORTS, "Reports"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cr): Report Utilization: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1700 ms.
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// 'cr' command handler elapsed time: 3 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  1061 ms.
+dismissDialog("Report Utilization"); // a (cr)
+// Tcl Message: report_utilization -name utilization_1 
+// bB (cr):  Report Utilization : addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  2298 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 26,544 MB. GUI used memory: 532 MB. Current time: 6/15/20, 2:28:18 PM CEST
+// [Engine Memory]: 26,751 MB (+75515kb) [01:34:54]
+// HMemoryUtils.trashcanNow. Engine heap size: 27,340 MB. GUI used memory: 530 MB. Current time: 6/15/20, 2:28:38 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 27,632 MB. GUI used memory: 530 MB. Current time: 6/15/20, 2:28:58 PM CEST
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [Engine Memory]: 28,470 MB (+400122kb) [01:35:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 28,794 MB. GUI used memory: 651 MB. Current time: 6/15/20, 2:29:29 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  1587 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2165 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 29,289 MB. GUI used memory: 794 MB. Current time: 6/15/20, 2:29:45 PM CEST
+// [GUI Memory]: 1,420 MB (+230kb) [01:36:52]
+// [GUI Memory]: 1,492 MB (+915kb) [01:36:53]
+// [GUI Memory]: 1,568 MB (+1230kb) [01:36:54]
+// [GUI Memory]: 1,647 MB (+653kb) [01:36:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 29,727 MB. GUI used memory: 983 MB. Current time: 6/15/20, 2:30:35 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  11350 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6124 ms.
+// Tcl Message: report_utilization: Time (s): cpu = 00:19:04 ; elapsed = 00:03:44 . Memory (MB): peak = 32235.324 ; gain = 1098.633 ; free physical = 40714 ; free virtual = 430652 
+// WARNING: HEventQueue.dispatchEvent() is taking  1368 ms.
+// Elapsed time: 231 seconds
+dismissDialog("Report Utilization"); // bB (cr)
+// Elapsed time: 252 seconds
+maximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // aA (aL, cr)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (O, cr)
+// WARNING: HEventQueue.dispatchEvent() is taking  2435 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 29,728 MB. GUI used memory: 967 MB. Current time: 6/15/20, 3:00:38 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2521 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 29,728 MB. GUI used memory: 966 MB. Current time: 6/15/20, 3:30:38 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  2277 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 29,728 MB. GUI used memory: 963 MB. Current time: 6/15/20, 4:00:38 PM CEST
